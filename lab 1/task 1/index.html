@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    nav {
+      background-color: lightgray;
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    main > section {
+      border: 2px solid black;
+      flex-grow: 1;
+      flex-basis: 0;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .first {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      text-align: center;
+    }
+    .first > section {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+    }
+    .first > footer {
+      background-color: lightgray;
+      flex-shrink: 0;
+    }
+
+    .second {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      text-align: center;
+    }
+    .second > section {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+    }
+    .second > footer {
+      background-color: lightgray;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        background-color: lightgray;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+      main > section {
+        border: 2px solid black;
+        flex-grow: 1;
+        flex-basis: 1;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+      }
+      .first > section {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+      }
+      .first > footer {
+        background-color: lightgray;
+        flex-shrink: 0;
+      }
+
+      .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+      }
+      .second > section {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+      }
+      .second > footer {
+        background-color: lightgray;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>Home</div>
+    <div>About</div>
+    <div>Services</div>
+    <div>Contact</div>
+  </nav>
+  <main>
+    <section class="first">
+      <section>This is flex item</section>
+      <footer>Footer</footer>
+    </section>
+    <section class="second">
+      <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        voluptates eum dolores, magnam esse maiores obcaecati tempore nemo
+        minus odio reiciendis eveniet quasi quos debitis, excepturi tempora
+        optio in. Laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Rerum fugit aliquid totam assumenda officiis, iure ipsam aperiam
+        dolorum. Rerum magnam odit eveniet harum ipsum nisi, vel est maiores
+        laborum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptas magnam explicabo quis hic iste nam eius minima
+        asperiores animi reprehenderit non vitae illo, nisi delectus
+        perferendis repellendus quisquam aliquid. Veritatis? Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Natus impedit aliquam, sed
+        laboriosam quos cupiditate iste ut in sequi adipisci quasi
+        perspiciatis! Nam, repudiandae vitae
+      </section>
+      <footer>Footer</footer>
+    </section>
+  </main>
+</body>
+</html>
